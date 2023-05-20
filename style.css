@@ -1,7 +1,5 @@
 body {
   width: 100vw;
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
@@ -9,6 +7,42 @@ h1 {
 }
 
 .container {
-  border: 1px solid black;
+  border: 2px solid red;
+  height: 80vh;
+}
 
+.expense-container {
+  border: 2px solid green;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+
+.expense-input,
+table {
+  /* border: 1px solid black; */
+
+}
+
+.expense-input {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 60%;
+  row-gap: 5%;
+}
+
+.data {
+  height: 30%;
+  /* width: 20%; */
+  font-size: larger;
+}
+
+.add-button {
+  text-align: center;
+
+}
+
+button {
+  font-size: large;
 }

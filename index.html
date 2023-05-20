@@ -13,13 +13,25 @@
     <header>
       <h1>Simple Expense Tracker</h1>
     </header>
-    <section>
-      <div class="container">
-        <div class="content"><input type="text"><input type="text"><input type="text"><input type="text"></div>
-        <div class="content"></div>
+    <section class="container">
+      <div class="expense-container">
+        <div class="expense-input"><input type="text" class="data" placeholder="Expense Name"><input type="number"
+            class="data" step="0.01" placeholder="Amount in USD"><input type="date" class="data"
+            placeholder="Date"><select type="" class="data">
+            <option value="card">Mode of Payment</option>
+            <option value="card">card</option>
+            <option value="cash">cash</option>
+            <option value="cyrpto">crypto</option>
+          </select>
+          <div class="add-button"><button onclick="displayExpenseTable()">Add Expense</button></div>
+
+        </div>
+        <div class="expense-table"></div>
       </div>
     </section>
     <footer></footer>
+    </div>
   </body>
+  <script src="script.js"></script>
 
 </html>
