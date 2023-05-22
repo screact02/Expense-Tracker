@@ -1,9 +1,11 @@
 function displayExpenseTable(){
 var table = document.getElementById("e-table");
 var trow = table.insertRow(1);
-// trow.id="dynamicTableRow";
+trow.id="dynamicTableRow";
 trow.style.backgroundColor ="#fff";
 trow.style.padding ="5%";
+// trow.style.color ="#fdb44b";
+// table.style.color= "#fdb44b";
 var cell1 = trow.insertCell(0);
 var cell2 = trow.insertCell(1);
 var cell3 = trow.insertCell(2);
@@ -13,7 +15,7 @@ var cell5 = trow.insertCell(4);
 cell1.innerText= document.getElementById("ename").value;
 cell2.innerText= document.getElementById("ewhere").value;
 cell3.innerText= "$" + document.getElementById("eamount").value;
-cell3.style.color ="green";
+cell3.style.color ="red";
 cell4.innerText= document.getElementById("edate").value;
 cell5.innerText= document.getElementById("emop").value;
 
@@ -36,6 +38,7 @@ var deleteExpense = document.createElement('button');
 deleteExpense.className ="fa fa-trash";
 deleteExpense.style.backgroundColor ="#fff";
 deleteExpense.style.border ="0px";
+deleteExpense.style.fontSize ="large";
 
 deleteExpense.addEventListener("click",removeExpense);
 trow.appendChild(deleteExpense);
@@ -43,5 +46,7 @@ trow.appendChild(deleteExpense);
 function removeExpense(){
 var tr = document.getElementById("dynamicTableRow");
 tr.parentNode.removeChild(tr);
+
+
 }
 }
