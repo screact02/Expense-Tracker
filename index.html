@@ -7,26 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
     <header>
-      <h1>Simple Expense Tracker</h1>
+      <h1 class="title">Simple Expense Tracker</h1>
     </header>
     <section class="container">
       <div class="expense-container">
-        <div class="expense-input"><input type="text" class="data" placeholder="Expense Name"><input type="number"
-            class="data" step="0.01" placeholder="Amount in USD"><input type="date" class="data"
-            placeholder="Date"><select type="" class="data">
+        <div class="expense-input"><input type="text" class="data" placeholder="Expense Name" id="ename"><input
+            type="text" class="data" placeholder="Where was the purchase made?" id="ewhere"><input type="number"
+            class="data" step="0.01" placeholder="Amount in USD" id="eamount"><input type="date" class="data"
+            placeholder="Date" id="edate"><select type="" class="data" id="emop">
             <option value="card">Mode of Payment</option>
             <option value="card">card</option>
             <option value="cash">cash</option>
             <option value="cyrpto">crypto</option>
           </select>
           <div class="add-button"><button onclick="displayExpenseTable()">Add Expense</button></div>
-
         </div>
-        <div class="expense-table"></div>
+        <div class="expense-table">
+          <table id="e-table">
+            <thead id="e-thead">
+              <tr>
+                <th>Name</th>
+                <th>Where?</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Type</th>
+
+              </tr>
+
+            </thead>
+          </table>
+        </div>
       </div>
     </section>
     <footer></footer>
