@@ -1,11 +1,7 @@
 function displayExpenseTable(){
 var table = document.getElementById("e-table");
 var trow = table.insertRow(1);
-trow.id="dynamicTableRow";
 trow.style.backgroundColor ="#fff";
-trow.style.padding ="5%";
-// trow.style.color ="#fdb44b";
-// table.style.color= "#fdb44b";
 var cell1 = trow.insertCell(0);
 var cell2 = trow.insertCell(1);
 var cell3 = trow.insertCell(2);
@@ -25,14 +21,11 @@ cell3.style.border = '1px solid black';
 cell4.style.border = '1px solid black';
 cell5.style.border = '1px solid black';
 
-
-
 document.getElementById("ename").value = "";
 document.getElementById("ewhere").value = "";
 document.getElementById("eamount").value = "";
 document.getElementById("edate").value = "";
 document.getElementById("emop").value = "";
-
 
 var deleteExpense = document.createElement('button');
 deleteExpense.className ="fa fa-trash";
