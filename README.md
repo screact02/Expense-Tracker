@@ -11,7 +11,7 @@
 
 ## Summary
 
-#### This project is simple expense tracker application that allows a user to add and delete expenses as many tasks as they wish. I used javascript's insertRow() method to create a dynamic row when an expense is added. I used basic CSS for styling and responsiveness
+#### This project is simple expense tracker application that allows a user to add and delete expenses as many times they wish. I used javascript's insertRow() method to create a dynamic row when an expense is added and basic CSS for styling and responsiveness
 
 ## Author
 
