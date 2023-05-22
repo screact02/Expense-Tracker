@@ -1,5 +1,5 @@
 # Expense-Tracker
-## SimpleTo Expense-Tracker
+## Simple Expense-Tracker
 #### This is a simple Expense-Tracker application created using pure HTML, CSS and Javascript
 
 ##### View the website [here](https://screact02.github.io/Expense-Tracker/)
